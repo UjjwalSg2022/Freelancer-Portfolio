@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">WEB-D</div>
+      <ul class="nav-links">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero fade-in">
+    <div class="container">
+      <h1>Hello, I'm <span>Ujjwal Singh</span></h1>
+      <p>Welcome to my portfolio!</p>
+      <a href="#portfolio" class="btn pop">View My Work</a>
+    </div>
+  </header>
+
+  <section class="about fade-in">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hi! I'm <strong>Ujjwal Singh</strong>, a passionate Frontend Developer who loves crafting beautiful, responsive, and user-friendly web experiences. I enjoy turning ideas into reality using code and always strive to learn the latest in web technologies. Let's build something amazing together!</p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio fade-in">
+    <div class="container">
+      <h2>Portfolio Showcase</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item scale-hover fade-in">
+          <img src="https://via.placeholder.com/300x200" alt="Project 1"/>
+          <h3>Project One</h3>
+          <p>Short description of the project.</p>
+        </div>
+        <div class="portfolio-item scale-hover fade-in">
+          <img src="https://via.placeholder.com/300x200" alt="Project 2"/>
+          <h3>Project Two</h3>
+          <p>Short description of the project.</p>
+        </div>
+        <div class="portfolio-item scale-hover fade-in">
+          <img src="https://via.placeholder.com/300x200" alt="Project 3"/>
+          <h3>Project Three</h3>
+          <p>Short description of the project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects fade-in">
+    <div class="container">
+      <h2>Project Listings</h2>
+      <ul class="project-list">
+        <li>
+          <h4>Project A</h4>
+          <p>Details about Project A. <a href="#">View More</a></p>
+        </li>
+        <li>
+          <h4>Project B</h4>
+          <p>Details about Project B. <a href="#">View More</a></p>
+        </li>
+        <li>
+          <h4>Project C</h4>
+          <p>Details about Project C. <a href="#">View More</a></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials fade-in">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial active">
+          <p>"Amazing work! Highly recommended."</p>
+          <h5>- Client One</h5>
+        </div>
+        <div class="testimonial">
+          <p>"Delivered on time and exceeded expectations."</p>
+          <h5>- Client Two</h5>
+        </div>
+        <div class="testimonial">
+          <p>"Very professional and creative."</p>
+          <h5>- Client Three</h5>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <button id="prevTestimonial">&lt;</button>
+        <button id="nextTestimonial">&gt;</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact fade-in">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required/>
+        <input type="email" name="email" placeholder="Your Email" required/>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn pop">Send Message</button>
+        <p id="formMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
