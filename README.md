@@ -1,2 +1,2 @@
 # Freelancer-Portfolio
-Portfolio showcase, project listings, contact form, testimonials etc
+Portfolio showcase, project listings, contact form, testimonials.
