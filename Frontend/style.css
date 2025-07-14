@@ -1,21 +1,18 @@
-/* Reset and base styles */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Segoe UI', Arial, sans-serif; background: #f9f9f9; color: #222; }
 .container { width: 90%; max-width: 1100px; margin: 0 auto; }
 
-/* === New Color Palette === */
 :root {
   --primary: #00bcd4;
   --secondary: #ffd600;
-  --accent1: #8e24aa; /* purple */
-  --accent2: #43a047; /* green */
-  --accent3: #ff7043; /* orange */
-  --accent4: #ff4081; /* pink */
+  --accent1: #8e24aa;
+  --accent2: #43a047;
+  --accent3: #ff7043;
+  --accent4: #ff4081;
   --bg-gradient: linear-gradient(120deg, var(--primary) 0%, var(--accent1) 100%);
   --btn-gradient: linear-gradient(90deg, var(--secondary), var(--accent3));
 }
 
-/* === Animations === */
 @keyframes fadeInUp {
   0% { opacity: 0; transform: translateY(40px); }
   100% { opacity: 1; transform: translateY(0); }
@@ -53,7 +50,6 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #f9f9f9; color: #
   animation: slideInDown 0.8s cubic-bezier(0.77,0,0.175,1) 0.1s both;
 }
 
-/* === Colorful Enhancements === */
 .hero {
   background: var(--bg-gradient);
 }
@@ -91,10 +87,9 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #f9f9f9; color: #
 .footer {
   background: linear-gradient(90deg, #222 80%, var(--accent1) 100%);
 }
-/* Add fade-in to sections by default (JS will trigger) */
+
 section.fade-in { opacity: 0; }
 
-/* Navbar */
 .navbar { background: #222; color: #fff; padding: 1rem 0; }
 .navbar .container { display: flex; justify-content: space-between; align-items: center; }
 .logo { font-size: 1.5rem; font-weight: bold; }
@@ -102,7 +97,6 @@ section.fade-in { opacity: 0; }
 .nav-links a { color: #fff; text-decoration: none; transition: color 0.2s; }
 .nav-links a:hover { color: #00bcd4; }
 
-/* Hero */
 .hero { background: linear-gradient(120deg, #00bcd4 0%, #2196f3 100%); color: #fff; padding: 5rem 0 3rem 0; text-align: center; }
 .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
 .hero h1 span { color: #ffd600; }
@@ -110,21 +104,18 @@ section.fade-in { opacity: 0; }
 .btn { background: #ffd600; color: #222; padding: 0.7rem 2rem; border: none; border-radius: 25px; font-weight: bold; cursor: pointer; text-decoration: none; transition: background 0.2s; }
 .btn:hover { background: #fff; color: #00bcd4; }
 
-/* Portfolio */
 .portfolio { padding: 4rem 0; }
 .portfolio h2 { text-align: center; margin-bottom: 2rem; }
 .portfolio-grid { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
 .portfolio-item { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); padding: 1rem; width: 300px; text-align: center; }
 .portfolio-item img { width: 100%; border-radius: 8px; margin-bottom: 1rem; }
 
-/* Projects */
 .projects { background: #f1f1f1; padding: 4rem 0; }
 .projects h2 { text-align: center; margin-bottom: 2rem; }
 .project-list { list-style: none; max-width: 700px; margin: 0 auto; }
 .project-list li { background: #fff; margin-bottom: 1.5rem; padding: 1.2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
 .project-list h4 { margin-bottom: 0.5rem; }
 
-/* Testimonials */
 .testimonials { padding: 4rem 0; }
 .testimonials h2 { text-align: center; margin-bottom: 2rem; }
 .testimonial-slider { position: relative; max-width: 600px; margin: 0 auto; }
@@ -135,7 +126,6 @@ section.fade-in { opacity: 0; }
 .testimonial-controls button { background: #00bcd4; color: #fff; border: none; border-radius: 50%; width: 2.2rem; height: 2.2rem; font-size: 1.2rem; margin: 0 0.5rem; cursor: pointer; transition: background 0.2s; }
 .testimonial-controls button:hover { background: #2196f3; }
 
-/* Contact */
 .contact { background: #f1f1f1; padding: 4rem 0; }
 .contact h2 { text-align: center; margin-bottom: 2rem; }
 #contactForm { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem; }
@@ -144,10 +134,8 @@ section.fade-in { opacity: 0; }
 #contactForm button { align-self: flex-end; }
 #formMessage { margin-top: 1rem; color: #00bcd4; font-weight: bold; }
 
-/* Footer */
 .footer { background: #222; color: #fff; text-align: center; padding: 1.5rem 0; margin-top: 2rem; font-size: 1rem; }
 
-/* Responsive */
 @media (max-width: 900px) {
   .portfolio-grid { flex-direction: column; align-items: center; }
 }
@@ -159,7 +147,6 @@ section.fade-in { opacity: 0; }
   .hero h1 { font-size: 2rem; }
 }
 
-/* About Section */
 .about {
   background: linear-gradient(120deg, #fff 80%, var(--accent2) 100%);
   padding: 3rem 0 2rem 0;
