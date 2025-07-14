@@ -16,7 +16,6 @@ document.getElementById('nextTestimonial').addEventListener('click', () => {
   currentTestimonial = (currentTestimonial + 1) % testimonials.length;
   showTestimonial(currentTestimonial);
 });
-
 showTestimonial(currentTestimonial);
 
 document.getElementById('contactForm').addEventListener('submit', function(e) {
